@@ -1,0 +1,49 @@
+:root {
+  --container-width: 100%;
+  --full-height: 100vh;
+  --flex: flex;
+  --border-image: linear-gradient(330deg, #B4EC14 0%, rgba(10, 29, 10, 0.00) 50.81%, #7F7 98.54%);
+  --green-border: 1px solid hsl(120, 75%, 42%);
+  --green-border-200: 1px solid #000;
+  --color-green-300: hsl(120, 69%, 14%);
+  --color-green-400: hsl(120, 77%, 93%);
+  --black: hsl(120, 49%, 8%);
+  --second-gradient: linear-gradient(#B4EC14, #1EDD1E);
+  --second-gradient-200: linear-gradient(#77BB77, #33B733);
+  --bg-green-100: linear-gradient(269deg, #B4EC14 -38.4%, #1EDD1E 101.35%);
+  --bg-green-200: linear-gradient(330deg, #B4EC14 0%, rgba(10, 29, 10, 0.00) 50.81%, #7F7 98.54%);
+  --bg-size: 100%;
+  --text-fill: transparent;
+  --text-light: hsl(120, 73%, 97%);
+  --gray-alt-border: 1px solid #ced4da;
+  --bg-dark: hsl(120, 60%, 2%);
+  --bg-dark-300: linear-gradient(180deg, #000 0%, hsl(120, 49%, 8%) 100%);
+  --bg-dark-200: hsl(0, 0%, 0%);
+  --color-white: hsl(120, 73%, 97%);
+  --color-white-200: hsla(120, 77%, 93%, 0.702);
+  --color-white-300: hsl(120, 36%, 89%);
+  --letter-spacing: .075em;
+  --heading-one: 3.5rem;
+  --heading-two: 3rem;
+  --heading-three: .875rem;
+  --heading-four: .75rem;
+  --heading-five: 2.25rem;
+  --paragraph-1: 1.125rem;
+  --paragraph-2: 1.5rem;
+  --mt-1: 3em;
+  --mt-2: 1.5em;
+  --mt-3: 1em;
+  --top: 2.0625em
+  --border-radius: 10px;
+  --border-radius-sm: 2px;
+  --box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --drop-shadow: drop-shadow(0px 0px 4px rgba(10, 29, 10, 0.50));
+  --container-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  --ff-primary: "HarmonyOS Sans", sans-serif;
+  --ff-secondary: 'Anek Malayalam', sans-serif;
+
+  /* Breakpoints */
+  --tablet-width: 750px;
+  --md-computer-width: 970px;
+  --lg-computer-width: 1170px;
+}
