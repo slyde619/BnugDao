@@ -1,136 +1,308 @@
 @media screen and (max-width: 460px) {
-    .wave1{
-        top: 9%;
-        right: -200px;
-        height: 250px;
-    }
-    .wave3{
-        height: 250px;
-        left: -192px;
-        top: -48px;
-    }
+  /* Utils */
+  .btn-green {
+    font-size: 1rem;
+    padding: 0.28em 1em;
+    display: inline-flex;
+    align-items: center;
+  }
+  /* Header */
+  header {
+    background-position: center center;
+    background-size: cover;
+  }
 
-    .hero{
-        min-height: 80vh;
-        color: #fff;
+  .hero {
+    min-height: 80vh;
+    color: #fff;
+  }
+  .hero__title {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+  .hero__body {
+    margin: 1.6em 0;
+    width: 100%;
+    font-size: 1.134rem;
+    line-height: 1.24;
+  }
+  .hero__btn {
+    margin-top: 2.7em;
+    padding: 1.3em 1.8em;
+    border-radius: 8px;
+    font-size: 1.85rem;
+    width: 90%;
+  }
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
+  .partners img {
+    height: 25px;
+  }
+  /* core objectives */
+  .objective {
+    grid-template-columns: 1fr;
+    gap: 0.8125em;
+    justify-content: center;
+  }
+  .objective__item-one {
+    width: 100%;
+    animation-duration: 3s;
+  }
+  .objective__item-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-duration: 5s;
+  }
+  .objective__item-heading {
+    font-size: var(--heading-six);
+  }
+  .objective__item-content {
+    font-size: var(--paragraph-3);
+  }
+  .m-width-3 {
+    width: 100%;
+  }
+
+  .obj-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--mt-2);
+  }
+  .contain-two {
+    animation-duration: 4s;
+    align-self: center;
+  }
+  /* Events and Activities */
+  .event__caps {
+    text-align: center;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    &:after,
+    &:before {
+      height: 2.125em;
+      width: 40px;
+      margin: 0 auto;
     }
-    .hero__title{
-        font-size: 2.25rem;
-        line-height: 1;
-    }
-    .hero__body{
-        margin: 1.6em 0;
-        width: 100%;
-        font-size: 1.134rem;
-        line-height: 1.24;
-    }
-    .hero__btn{
-        margin-top: 2.7em;
-        padding: 1.3em 1.8em;
-        border-radius: 8px;
-        font-size: 1.85rem;
-        width: 90%;
-    }
-    .partners{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 1em;
-    }
-    .partners img{
-        height: 25px;
-    }
+  }
+  .event__heading {
+    font-size: var(--paragraph-2);
+  }
+  .event__counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .event__gradient-one {
+    display: none !important;
+  }
+  .upcoming-event,
+  .past-event {
+    max-height: 100svh;
+    width: 100%;
+    padding: 1.4em 2.3em;
+    object-fit: fill;
+  }
+  .event__intro {
+    font-size: 1.3rem;
+  }
+  .upcoming-event__article {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1em; */
+    margin: var(--mt-2) 0;
+    justify-content: space-evenly;
+  }
+  .upcoming-event__article-heading {
+    font-size: 1.2rem;
+    line-height: 1.24em;
+    width: 100%;
+  }
+  .upcoming-event__article-body {
+    width: 100%;
+    line-height: 1.15;
+    font-size: 1rem;
+    margin-top: var(--mt-2);
+  }
+  .event__article-img img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  /* NFT marketplace */
+  .marketplace {
+    gap: 1.2em;
+  }
+  .marketplace__img-mobile {
+    z-index: 2;
+    height: 74%;
+    width: 25vw;
+    position: absolute;
+    inset: 6.7em 8em 1em;
+    overflow: visible;
+  }
+  .marketplace .objective__item-heading {
+    width: 80%;
+    text-wrap: balance;
+    font-size: 1.15rem;
+  }
+
+  .event__gradient-one,
+  .event__gradient-two,
+  .event__gradient-three {
+    display: none;
+  }
+  /* Join Community */
+  #join-community {
+    background-size: fill;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+  }
+  .join {
+    flex-direction: column;
+    row-gap: 0.45em;
+  }
+  .join-community {
+    background-image: url("https://ik.imagekit.io/pt3qkxcno/BNUGDAO/Join%20Community/TG.png?updatedAt=1698789713553");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.75em 0.75em 0 0.75em;
+    min-height: 30vh;
+  }
+  .join__content-heading {
+    font-size: 1.45rem;
+  }
+  .join__content-body {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+  }
+  .join__btn {
+    margin-top: 0.199em;
+  }
+  .join__img img {
+    object-fit: fill;
+  }
+
+  /* Footer */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6em;
+    justify-content: space-between;
+  }
+
+  .sub__footer-extra {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
-@media (max-width: 826px){
+@media (max-width: 826px) {
+  header {
+    transition: 0.2s;
+  }
+  .container {
+    width: 90%;
+    max-width: 900px;
+  }
 
-    header{
-        transition: .2s;
-    }
-    .container {
-        width: 90%;
-        max-width: 900px;
-    }
+  .brand-logo {
+    height: 1.2em;
+  }
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 55vh;
+    width: 100%;
+    background: linear-gradient(271deg, #b4ec14 -12.2%, #1edd1e 76.02%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+  }
 
-    .brand-logo{
-        height: 1.2em;
-    }
-    .navbar__links{
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        height: 55vh;
-        width: 100%;
-        background: linear-gradient(271deg, #B4EC14 -12.2%, #1EDD1E 76.02%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transition: all .50s ease;
-        border-bottom-left-radius: .4em;
-        border-bottom-right-radius: .4em;
-    } 
+  .navbar__links a {
+    display: block;
+    margin: 0.1em 0;
+    transition: all 0.4s ease-in;
+  }
 
-    .navbar__links a{
-        display: block;
-        margin: .1em 0;
-        transition: all .4s ease-in;
-    }
+  .navbar__links a.active {
+    background-image: linear-gradient(#fff, #f3f3f4);
+  }
 
-    .navbar__links a.active{
-        background-image: linear-gradient(#fff, #f3f3f4);
-    }
+  .navbar__links a:hover {
+    transform: translateY(0.4em) scale(0.97);
+  }
 
-    .navbar__links a:hover{
-        transform: translateY(.4em) scale(.97);
-    }
+  .navbar__cta--btn {
+    padding: 0.55em 1.2em;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-right: 1em;
+  }
 
-    .navbar__cta--btn{
-        padding: .55em 1.2em;
-        font-size: .7rem;
-        font-weight: 400;
-        margin-right: 1em;
-    }
+  .bar-right {
+    display: block;
+    border-bottom: 0.5px solid #fff;
+    width: 90%;
+  }
 
+  .bar {
+    display: none;
+  }
 
-    .bar-right{
-        display: block;
-        border-bottom: .5px solid #fff;
-        width: 90%;
+  .menu {
+    display: block;
+  }
 
-    }
-
-    .bar{
-        display: none;
-    }
-
-    .menu{
-        display: block;
-    }
-
-    /* Open Navlink */
-    .navbar__links.open{
-        display: flex;
-        right: 0;
-    }
+  /* Open Navlink */
+  .navbar__links.open {
+    display: flex;
+    right: 0;
+  }
 }
 
-@media (min-width: 769px ) and (max-width: 1120px)  {
+@media (min-width: 769px) and (max-width: 1120px) {
+  .container {
+    width: 90%;
+    /* max-width: 900px; */
+  }
+  .navbar__links {
+    display: flex;
+  }
 
-     .container {
-        width: 90%;
-        /* max-width: 900px; */
-    }
-    .navbar__links{
-        display: flex;
-    }
-
-     .navbar__links {
-        gap: 1em;
-    }
-    .navbar__links a {
-        font-size: .75rem;
-    }
+  .navbar__links {
+    gap: 1em;
+  }
+  .navbar__links a {
+    font-size: 0.75rem;
+  }
 }

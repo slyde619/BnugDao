@@ -448,6 +448,11 @@ main section {
   background-color: lightgray -76.132px 0px / 109.649% 131.579% no-repeat;
   mix-blend-mode: color-dodge;
 }
+.obj__body{
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: balance;
+}
 .radial-gradient {
   position: absolute;
   inset: auto 1.9em 1.9em auto;
@@ -681,8 +686,6 @@ footer{
   grid-template-columns: 3fr 1fr 1fr 1fr;
   gap: 1.6em;
   justify-content: space-between;
-  /* align-items: center; */
-  /* padding-top: 3em; */
 }
 
 .first p{
