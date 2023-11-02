@@ -614,6 +614,7 @@ main section {
   font-weight: 900;
   line-height: 1.4em;
   max-width: 459px;
+  font-family: var(--ff-secondary);
 }
 .upcoming-event__article-heading span{
   font-weight: 500;
