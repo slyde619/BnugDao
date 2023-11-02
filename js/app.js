@@ -9,7 +9,7 @@ menuIcon.addEventListener('click', () => {
 
 // Event Counter
 const eventNumber = document.querySelectorAll('.event__number')
-const interval = 4000
+const interval = 6000
 eventNumber.forEach(num => {
     let startValue = 0
     let endValue = parseInt(num.getAttribute('data-value'))
